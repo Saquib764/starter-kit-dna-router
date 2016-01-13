@@ -1,0 +1,40 @@
+<dom-module id="contact-template">
+	<style>
+	    :host {
+	      position: relative;
+	      width: 100px;
+	    }
+	</style>
+	<template>
+		<div class="input">
+		contact
+		</div>
+	</template>
+</dom-module>
+
+<script>
+
+Polymer({
+	is: 'contact-template',
+	properties: {
+		params: {
+			type: 'Object'
+		},
+	},
+	behaviors: [],
+	attached: function(){
+		console.log('contact');
+		$http({
+			method: 'POST',
+			url: 'http://httpbin.org/post',
+			headers: {
+
+			},
+			data: {
+				is: 'dfd',
+				ad: [1,2]
+			}
+		});
+	},
+});
+</script>

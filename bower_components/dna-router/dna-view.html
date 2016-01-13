@@ -1,0 +1,70 @@
+<link rel="import" href="./dna-router-behaviors.html">
+
+<dom-module id='dna-view'>
+	<style>
+		:host{
+			width: 100%;
+			height: auto;
+			display: none;
+		}
+		:host([active]){
+			display: inline-block;
+		}
+
+
+	</style>
+	<template>
+		<content></content>
+	</template>
+</dom-module>
+
+<dom-module id='dna-many-view'>
+	<style>
+		:host{
+			width: 100%;
+			height: auto;
+			display: none;
+		}
+		:host([active]){
+			display: inline-block;
+		}
+
+
+	</style>
+	<template>
+		<content></content>
+	</template>
+</dom-module>
+
+
+<dom-module id='s-ref'>
+	<template>
+		<content></content>
+	</template>
+</dom-module>
+
+<script>
+var P;
+(function(){
+
+	Polymer({
+		is: 'dna-view',
+		behaviors: [DnaViewBehavior],
+		attached: function(){
+			P = this;
+		},
+	});
+
+    Polymer({
+    	is: 'dna-many-view',
+    	behaviors: [DnaManyViewBehavior],
+    });
+
+	Polymer({
+		is: 's-ref',
+		extends: 'a',
+		behaviors: [DnaSrefBehavior],
+
+	});
+})();
+</script>

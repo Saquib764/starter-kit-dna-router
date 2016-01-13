@@ -1,0 +1,39 @@
+{
+  "name": "dna-router",
+  "authors": [
+    "Saquib <saquibvswild@gmail.com>"
+  ],
+  "description": "Angular's UI-router style router provider for Polymer 1.0",
+  "keywords": [
+    "Polymer",
+    "Router",
+    "DNA",
+    "router",
+    "web-components",
+    "web-component",
+    "polymer"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "iron-ajax": "PolymerElements/iron-ajax#~1.1.1"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "homepage": "https://github.com/Saquib764/dna-router",
+  "_release": "bf3da74636",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "bf3da746363fd6be9a0083aff40f94275146a62b"
+  },
+  "_source": "git://github.com/Saquib764/dna-router.git",
+  "_target": "*",
+  "_originalSource": "dna-router",
+  "_direct": true
+}
